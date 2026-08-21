@@ -329,4 +329,22 @@ const openServices = () => {
     display: block;
   }
 }
+
+@media (max-width: 600px) {
+  .header-inner {
+    min-height: 78px;
+    gap: 12px;
+  }
+
+  .top-strip__inner {
+    gap: 8px 14px;
+    padding: 8px 0;
+    font-size: 0.66rem;
+  }
+
+  .brand__logo {
+    width: 150px;
+    height: 64px;
+  }
+}
 </style>

@@ -150,4 +150,22 @@ import { expectSteps } from '../data/siteData'
     padding: 24px 22px;
   }
 }
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 56px 0 44px;
+  }
+
+  .small-hero h1 {
+    font-size: clamp(1.9rem, 7vw, 2.6rem);
+  }
+
+  .section {
+    padding: 40px 0 56px;
+  }
+
+  .step-card {
+    padding: 22px 18px;
+  }
+}
 </style>

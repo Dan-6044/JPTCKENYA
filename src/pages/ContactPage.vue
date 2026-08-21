@@ -215,4 +215,22 @@ const contactDetails = [
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 56px 0 44px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .contact-card {
+    padding: 22px 18px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.9rem, 7vw, 2.6rem);
+  }
+}
 </style>

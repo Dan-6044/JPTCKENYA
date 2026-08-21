@@ -140,4 +140,22 @@ import { serviceItems } from '../data/siteData'
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 56px 0 44px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+  }
+}
 </style>

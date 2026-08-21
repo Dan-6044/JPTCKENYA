@@ -40,7 +40,7 @@ import { teamMembers } from '../data/siteData'
   margin: 0 auto;
 }
 .container h2{
-    font-size: clamp(2.3rem, 1vw, 2.9rem);
+    font-size: clamp(1.7rem, 5vw, 2.9rem);
 }
 
 .page-shell {
@@ -132,6 +132,28 @@ import { teamMembers } from '../data/siteData'
 @media (max-width: 760px) {
   .team-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 56px 0 44px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .team-card img {
+    height: 260px;
+  }
+
+  .team-info {
+    padding: 20px;
+  }
+
+  .team-info h2 {
+    font-size: 1.4rem;
   }
 }
 </style>

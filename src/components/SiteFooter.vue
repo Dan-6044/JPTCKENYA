@@ -144,4 +144,19 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
     padding-top: 34px;
   }
 }
+
+@media (max-width: 480px) {
+  .brand-logo {
+    width: 160px;
+    height: 66px;
+  }
+
+  .footer-grid {
+    gap: 26px;
+  }
+
+  .site-footer {
+    margin-top: 44px;
+  }
+}
 </style>

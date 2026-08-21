@@ -245,7 +245,7 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .hero__title {
-  font-size: clamp(5.3rem, 3.4vw, 4.5rem);
+  font-size: clamp(2.1rem, 6vw, 4.5rem);
   line-height: 1.08;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -485,8 +485,21 @@ const featuredServices = serviceItems.slice(0, 8)
 
 @media (max-width: 640px) {
   .hero {
-    min-height: 540px;
-    padding-bottom: 40px;
+    min-height: 520px;
+    padding-bottom: 36px;
+  }
+
+  .hero__copy {
+    padding-top: 8px;
+  }
+
+  .hero__copy p {
+    font-size: 1rem;
+    margin-bottom: 22px;
+  }
+
+  .hero__actions {
+    gap: 12px;
   }
 
   .service-grid {
@@ -494,11 +507,26 @@ const featuredServices = serviceItems.slice(0, 8)
   }
 
   .section {
-    padding: 64px 0;
+    padding: 56px 0;
   }
 
   .contact-panel {
     padding: 22px 18px;
+    gap: 18px;
+  }
+
+  .info-box {
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    min-height: 460px;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
 </style>

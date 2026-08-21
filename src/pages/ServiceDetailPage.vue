@@ -214,4 +214,32 @@ const service = computed(
     align-items: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 56px 0 44px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .detail-content {
+    padding: 22px 18px;
+  }
+
+  .side-card {
+    padding: 24px 20px;
+  }
+
+  .icon-badge {
+    width: 64px;
+    height: 64px;
+    font-size: 1.9rem;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+  }
+}
 </style>
