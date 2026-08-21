@@ -486,6 +486,7 @@ const featuredServices = serviceItems.slice(0, 8)
 @media (max-width: 640px) {
   .hero {
     min-height: 540px;
+    padding-bottom: 40px;
   }
 
   .service-grid {

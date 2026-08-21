@@ -227,6 +227,15 @@ const openServices = () => {
   visibility: hidden;
 }
 
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 12px;
+}
+
 .nav-dropdown.is-visible {
   opacity: 1;
   pointer-events: auto;
@@ -263,7 +272,7 @@ const openServices = () => {
 
   .main-nav {
     position: absolute;
-    top: calc(100% + 8px);
+  top: calc(100% - 2px);
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.98);
