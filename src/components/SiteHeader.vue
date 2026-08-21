@@ -27,6 +27,12 @@ const toggleServices = (event) => {
     isServicesOpen.value = !isServicesOpen.value
   }
 }
+
+const openServices = () => {
+  if (!window.matchMedia('(max-width: 900px)').matches) {
+    isServicesOpen.value = true
+  }
+}
 </script>
 
 <template>
@@ -56,7 +62,13 @@ const toggleServices = (event) => {
 
       <nav class="main-nav" :class="{ 'is-open': isMenuOpen }">
         <template v-for="item in navItems" :key="item.label">
-          <div v-if="item.hasDropdown" class="nav-item services-menu" :class="{ 'is-open': isServicesOpen }">
+          <div
+            v-if="item.hasDropdown"
+            class="nav-item services-menu"
+            :class="{ 'is-open': isServicesOpen }"
+            @mouseenter="openServices"
+            @mouseleave="closeMenu"
+          >
             <RouterLink :to="item.to" class="nav-link desktop-services-link">
               <span>{{ item.label }}</span>
               <span class="caret">▾</span>
@@ -215,9 +227,7 @@ const toggleServices = (event) => {
   visibility: hidden;
 }
 
-.services-menu:hover .nav-dropdown,
-.services-menu:focus-within .nav-dropdown,
-.services-menu .nav-dropdown:hover {
+.nav-dropdown.is-visible {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
@@ -264,6 +274,8 @@ const toggleServices = (event) => {
     flex-direction: column;
     padding: 14px;
     align-items: flex-start;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
   }
 
   .desktop-services-link {
@@ -291,6 +303,8 @@ const toggleServices = (event) => {
     width: 100%;
     padding: 0 0 10px 0;
     visibility: hidden;
+    max-height: 0;
+    overflow-y: hidden;
   }
 
   .nav-dropdown.is-visible {
@@ -298,6 +312,8 @@ const toggleServices = (event) => {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    max-height: 42vh;
+    overflow-y: auto;
   }
 
   .nav-toggle {

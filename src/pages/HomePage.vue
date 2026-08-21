@@ -14,12 +14,56 @@ const featuredServices = serviceItems.slice(0, 8)
           <h1 class="hero__title">Jenga Paediatric Therapy Center</h1>
           <div class="hero__tagline">Building skills. Growing possibilities.</div>
           <p>
-            Jenga supports children and families with expert physiotherapy, developmental guidance,
-            and practical therapy strategies tailored to everyday life.
+            Jenga Paediatric Therapy Centre supports children and families with physio- and occupational therapy, developmental guidance, and practical strategies tailored to everyday life, helping each child build skills, confidence, and independence.
           </p>
           <div class="hero__actions">
             <router-link to="/contact" class="btn btn-primary">Book a consultation</router-link>
             <router-link to="/services" class="btn btn-secondary">Explore services</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section intro-section">
+      <div class="container about-layout">
+        <div class="about-copy">
+          <span class="eyebrow">About Jenga</span>
+          <h2>Building skills, confidence and independence.</h2>
+          <p>
+            At Jenga Paediatric Therapy Centre, we provide child-centred therapy and developmental support
+            for babies, children and adolescents. Jenga means “to build” in Swahili, reflecting our belief in
+            helping every child build the skills, confidence and independence they need to participate fully in
+            everyday life.
+          </p>
+          <p>
+            We recognise that every child develops differently. Our therapy is therefore tailored to each child’s
+            individual strengths, challenges and goals, with a focus on practical, meaningful progress that carries
+            over into daily routines at home, at school and in the community.
+          </p>
+          <p>
+            We work closely with parents, caregivers, teachers, schools and other professionals involved in the
+            child’s care. Through assessment, individual therapy, home programmes and collaborative support, we aim
+            to create an environment where children feel comfortable, motivated and encouraged to learn, move,
+            explore and grow.
+          </p>
+          <p>
+            Jenga brings together different areas of paediatric therapy and developmental support, allowing us to
+            look at the whole child and provide coordinated care as their needs change over time.
+          </p>
+        </div>
+
+        <div class="info-panel">
+          <div class="info-box">
+            <strong>Child-centred care</strong>
+            <span>Therapy is shaped around each child’s strengths, needs, interests and goals.</span>
+          </div>
+          <div class="info-box">
+            <strong>Practical progress</strong>
+            <span>We connect therapy to meaningful routines at home, at school and in the community.</span>
+          </div>
+          <div class="info-box">
+            <strong>Coordinated support</strong>
+            <span>We collaborate with families, schools and professionals to support the whole child.</span>
           </div>
         </div>
       </div>
