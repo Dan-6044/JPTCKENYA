@@ -80,7 +80,7 @@ const contactDetails = [
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #285943, #8fca3f);
+  background: linear-gradient(135deg, #3d6b26, #8CC63F);
   color: white;
   padding: 72px 0 60px;
 }
@@ -121,7 +121,7 @@ const contactDetails = [
 .contact-card h2 {
   margin-top: 0;
   margin-bottom: 18px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.9rem;
 }
 
@@ -140,7 +140,7 @@ const contactDetails = [
 }
 
 .booking-card .eyebrow {
-  color: #6da52d;
+  color: #7ab83a;
   margin-bottom: 0;
 }
 
@@ -163,7 +163,7 @@ const contactDetails = [
   padding: 14px;
   border: 1px solid rgba(143, 202, 63, 0.24);
   border-radius: 12px;
-  color: #285943;
+  color: #3d6b26;
   text-decoration: none;
   background: #f1f8eb;
 }
@@ -178,7 +178,7 @@ const contactDetails = [
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #8fca3f;
+  background: #8CC63F;
   color: #fff;
 }
 
@@ -194,12 +194,12 @@ const contactDetails = [
 
 .next-steps {
   padding-top: 10px;
-  border-top: 1px solid rgba(40, 89, 67, 0.12);
+  border-top: 1px solid rgba(61, 107, 38, 0.12);
 }
 
 .next-steps h3 {
   margin: 0 0 10px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.15rem;
 }
 

@@ -7,7 +7,7 @@ import { teamMembers } from '../data/siteData'
     <section class="page-hero">
       <div class="container">
         <span class="eyebrow">Our team</span>
-        <h1>Dedicated specialists caring for every child.</h1>
+        <h2>Dedicated specialists caring for every child.</h2>
       </div>
     </section>
 
@@ -39,13 +39,16 @@ import { teamMembers } from '../data/siteData'
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
 }
+.container h2{
+    font-size: clamp(2.3rem, 1vw, 2.9rem);
+}
 
 .page-shell {
   min-height: 100vh;
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #285943, #8fca3f);
+  background: linear-gradient(135deg, #3d6b26, #8CC63F);
   color: white;
   padding: 72px 0 60px;
 }
@@ -110,14 +113,14 @@ import { teamMembers } from '../data/siteData'
 
 .team-info h2 {
   margin: 0 0 8px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.6rem;
 }
 
 .team-info h3 {
   margin: 0 0 12px;
   font-size: 1rem;
-  color: #6da52d;
+  color: #7ab83a;
 }
 
 .team-info p {

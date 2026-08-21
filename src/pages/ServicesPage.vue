@@ -48,7 +48,7 @@ import { serviceItems } from '../data/siteData'
 }
 
 .page-hero {
-  background: linear-gradient(135deg, rgba(40, 89, 67, 0.95), rgba(143, 202, 63, 0.88));
+  background: linear-gradient(135deg, rgba(61, 107, 38, 0.95), rgba(140, 198, 63, 0.88));
   color: white;
   padding: 72px 0 60px;
 }
@@ -120,7 +120,7 @@ import { serviceItems } from '../data/siteData'
 
 .service-card h2 {
   margin: 0 0 14px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.45rem;
 }
 
@@ -131,7 +131,7 @@ import { serviceItems } from '../data/siteData'
 }
 
 .service-card span {
-  color: #285943;
+  color: #3d6b26;
   font-weight: 700;
 }
 

@@ -8,7 +8,7 @@ const navItems = [
   { label: 'Home', to: '/' },
   { label: 'What to expect?', to: '/what-to-expect' },
   { label: 'Services', to: '/services', hasDropdown: true },
-  { label: 'Teams & Partners', to: '/team' },
+  { label: 'Team & Partners', to: '/team' },
   { label: 'Contact Us', to: '/contact' },
 ]
 
@@ -121,7 +121,7 @@ const openServices = () => {
 }
 
 .top-strip {
-  background: linear-gradient(135deg, #285943, #8fca3f);
+  background: linear-gradient(135deg, #3d6b26, #8CC63F);
   color: #fff;
   font-size: 0.75rem;
 }
@@ -148,7 +148,7 @@ const openServices = () => {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #285943;
+  color: #3d6b26;
 }
 
 .brand__logo {
@@ -199,13 +199,13 @@ const openServices = () => {
 
 .nav-link:hover,
 .dropdown-link:hover {
-  color: #285943;
+  color: #3d6b26;
 }
 
 .nav-link.router-link-exact-active,
 .nav-link.router-link-active {
   background: rgba(143, 202, 63, 0.14);
-  color: #285943;
+  color: #3d6b26;
 }
 
 .nav-dropdown {
@@ -246,12 +246,12 @@ const openServices = () => {
 .nav-toggle {
   display: none;
   border: none;
-  background: #edf8e4;
+  background: #f0f9e6;
   width: 46px;
   height: 46px;
   border-radius: 12px;
   font-size: 1.4rem;
-  color: #285943;
+  color: #3d6b26;
   cursor: pointer;
 }
 

@@ -46,7 +46,7 @@ import { expectSteps } from '../data/siteData'
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #285943, #8fca3f);
+  background: linear-gradient(135deg, #3d6b26, #8CC63F);
   color: white;
   padding: 72px 0 60px;
 }
@@ -98,7 +98,7 @@ import { expectSteps } from '../data/siteData'
 
 .step-card h3 {
   margin: 0 0 14px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.38rem;
   line-height: 1.3;
 }
@@ -110,7 +110,7 @@ import { expectSteps } from '../data/siteData'
   place-items: center;
   border-radius: 16px;
   background: rgba(143, 202, 63, 0.14);
-  color: #285943;
+  color: #3d6b26;
   font-weight: 800;
   margin-bottom: 20px;
 }

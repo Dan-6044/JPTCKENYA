@@ -67,7 +67,7 @@ const service = computed(
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #285943, #8fca3f);
+  background: linear-gradient(135deg, #3d6b26, #8CC63F);
   color: white;
   padding: 70px 0 60px;
 }
@@ -123,10 +123,9 @@ const service = computed(
 }
 
 .lead {
-  font-size: 1.12rem;
-  line-height: 1.8;
-  color: #435d78;
   margin: 0 0 24px;
+  color: #526659;
+  line-height: 1.8;
 }
 
 .seo-intro {
@@ -141,7 +140,7 @@ const service = computed(
 
 .info-block h2 {
   margin: 0 0 12px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.35rem;
 }
 
@@ -168,13 +167,13 @@ const service = computed(
 
 .subsection h3 {
   margin: 0 0 8px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.08rem;
   line-height: 1.4;
 }
 
 .side-card {
-  background: linear-gradient(180deg, #edf8e4, #f4faee);
+  background: linear-gradient(180deg, #f0f9e6, #f4faee);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 22px;
   padding: 28px 24px;
@@ -182,7 +181,7 @@ const service = computed(
 
 .side-card h3 {
   margin: 0 0 14px;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.5rem;
 }
 
@@ -199,7 +198,7 @@ const service = computed(
   min-height: 48px;
   padding: 0 20px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #8fca3f, #4e923e);
+  background: linear-gradient(135deg, #8CC63F, #5a9a3a);
   color: white;
   text-decoration: none;
   font-weight: 700;

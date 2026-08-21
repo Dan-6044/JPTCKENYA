@@ -117,20 +117,42 @@ const featuredServices = serviceItems.slice(0, 8)
             strength, posture, handwriting, fine motor difficulties, sensory processing, motor planning,
             attention, and difficulty managing everyday tasks independently.
           </p>
+          <p>
+            We also support children and adolescents with musculoskeletal and sports-related concerns, including pain, reduced strength, altered walking patterns, foot posture, joint instability and difficulties returning to normal activities following an injury.
+          </p>
+          <p>
+            At Jenga, we look beyond a diagnosis and focus on how a child’s strengths and challenges affect their everyday life. Through assessment, physiotherapy, occupational therapy and collaboration with families and schools, we develop practical and meaningful goals that support greater confidence, independence and participation at home, at school, during play and in the wider community.
+          </p>
+          <p>
+            You do not need to know whether your child needs physiotherapy or occupational therapy before contacting us. If something about your child’s movement, development or everyday skills concerns you, we can help determine the most appropriate next step.
+          </p>
         </div>
 
-        <div class="info-panel">
-          <div class="info-box">
-            <strong>Assessment & support</strong>
-            <span>We look beyond the diagnosis to understand how your child’s strengths and challenges affect everyday life.</span>
+        <div class="info-panels">
+          <div class="info-panel">
+            <div class="info-box">
+              <strong>Assessment &amp; support</strong>
+              <span>We look beyond the diagnosis to understand how your child’s strengths and challenges affect everyday life.</span>
+            </div>
+            <div class="info-box">
+              <strong>Family and school collaboration</strong>
+              <span>We work with families, schools, and caregivers to build practical goals that support confidence and participation.</span>
+            </div>
+            <div class="info-box">
+              <strong>Personalised care</strong>
+              <span>If something about your child’s movement, development, or daily skills concerns you, we can help identify the next step.</span>
+            </div>
           </div>
-          <div class="info-box">
-            <strong>Family and school collaboration</strong>
-            <span>We work with families, schools, and caregivers to build practical goals that support confidence and participation.</span>
-          </div>
-          <div class="info-box">
-            <strong>Personalised care</strong>
-            <span>If something about your child’s movement, development, or daily skills concerns you, we can help identify the next step.</span>
+
+          <div class="info-panel">
+            <div class="info-box">
+              <strong>Musculoskeletal &amp; sports support</strong>
+              <span>We support children and adolescents with musculoskeletal and sports-related concerns, helping them return to the activities they enjoy.</span>
+            </div>
+            <div class="info-box">
+              <strong>Easy first step</strong>
+              <span>You do not need to know whether your child needs physiotherapy or occupational therapy before contacting us. We can help determine the most appropriate next step.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -183,7 +205,7 @@ const featuredServices = serviceItems.slice(0, 8)
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #6da52d;
+  color: #7ab83a;
   margin-bottom: 12px;
 }
 
@@ -270,9 +292,9 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #8fca3f, #4e923e);
+  background: linear-gradient(135deg, #8CC63F, #5a9a3a);
   color: white;
-  box-shadow: 0 20px 30px rgba(40, 89, 67, 0.2);
+  box-shadow: 0 20px 30px rgba(61, 107, 38, 0.2);
 }
 
 .btn-secondary {
@@ -293,7 +315,7 @@ const featuredServices = serviceItems.slice(0, 8)
   margin: 0;
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.15;
-  color: #285943;
+  color: #3d6b26;
 }
 
 .service-grid {
@@ -304,7 +326,7 @@ const featuredServices = serviceItems.slice(0, 8)
 
 .service-card {
   display: block;
-  background: linear-gradient(180deg, #ffffff, #f1f8eb);
+  background: linear-gradient(180deg, #ffffff, #f1f9eb);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 22px;
   padding: 28px 22px;
@@ -332,7 +354,7 @@ const featuredServices = serviceItems.slice(0, 8)
 .service-card h3 {
   margin: 0 0 12px;
   font-size: 1.2rem;
-  color: #285943;
+  color: #3d6b26;
 }
 
 .service-card p {
@@ -344,7 +366,7 @@ const featuredServices = serviceItems.slice(0, 8)
 .learn-more {
   display: inline-block;
   margin-top: 18px;
-  color: #285943;
+  color: #3d6b26;
   font-weight: 700;
 }
 
@@ -362,13 +384,18 @@ const featuredServices = serviceItems.slice(0, 8)
   font-size: 1.06rem;
 }
 
+.info-panels {
+  display: grid;
+  gap: 18px;
+}
+
 .info-panel {
   display: grid;
   gap: 18px;
 }
 
 .info-box {
-  background: linear-gradient(135deg, #edf8e4, #f5faef);
+  background: linear-gradient(135deg, #f0f9e6, #f5faef);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 20px;
   padding: 26px 22px;
@@ -377,7 +404,7 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .info-box strong {
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.1rem;
 }
 
@@ -391,7 +418,7 @@ const featuredServices = serviceItems.slice(0, 8)
   grid-template-columns: 0.8fr 0.8fr 1.4fr;
   gap: 22px;
   align-items: start;
-  background: linear-gradient(135deg, #f1f8eb, #edf8e4);
+  background: linear-gradient(135deg, #f1f9eb, #f0f9e6);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 28px;
   padding: 34px;
@@ -411,7 +438,7 @@ const featuredServices = serviceItems.slice(0, 8)
 
 .booking-summary h3 {
   margin: 0;
-  color: #285943;
+  color: #3d6b26;
   font-size: 1.25rem;
 }
 
@@ -428,13 +455,13 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .booking-links a {
-  color: #285943;
+  color: #3d6b26;
   font-weight: 700;
   text-decoration: none;
 }
 
 .booking-links a:hover {
-  color: #6da52d;
+  color: #7ab83a;
 }
 
 .booking-links span {

@@ -8,13 +8,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --brand-deep: #285943;
-  --brand-mid: #8fca3f;
-  --brand-soft: #a6d65a;
-  --brand-light: #edf8e4;
-  --heading: #285943;
+  --brand-deep: #3d6b26;
+  --brand-mid: #8CC63F;
+  --brand-soft: #b8e06f;
+  --brand-light: #f0f9e6;
+  --heading: #3d6b26;
   --text: #526659;
-  --border: rgba(40, 89, 67, 0.14);
+  --border: rgba(61, 107, 38, 0.14);
 }
 
 * {
