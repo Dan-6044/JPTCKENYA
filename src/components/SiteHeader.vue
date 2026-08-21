@@ -41,8 +41,8 @@ const toggleServices = (event) => {
     </div>
 
     <div class="container header-inner">
-      <RouterLink to="/" class="brand" aria-label="JPTC Kenya home" @click="closeMenu">
-        <img class="brand__logo" :src="logoImage" alt="JPTC Kenya logo" />
+      <RouterLink to="/" class="brand" aria-label="Jenga home" @click="closeMenu">
+        <img class="brand__logo" :src="logoImage" alt="Jenga logo" />
       </RouterLink>
 
       <button
@@ -109,7 +109,7 @@ const toggleServices = (event) => {
 }
 
 .top-strip {
-  background: linear-gradient(135deg, #173b63, #2584b8);
+  background: linear-gradient(135deg, #285943, #8fca3f);
   color: #fff;
   font-size: 0.75rem;
 }
@@ -136,7 +136,7 @@ const toggleServices = (event) => {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #243d61;
+  color: #285943;
 }
 
 .brand__logo {
@@ -145,7 +145,7 @@ const toggleServices = (event) => {
   object-fit: cover;
   object-position: center;
   border-radius: 0;
-  box-shadow: 0 16px 30px rgba(18, 159, 208, 0.2);
+  box-shadow: 0 16px 30px rgba(143, 202, 63, 0.24);
 }
 
 .main-nav {
@@ -164,7 +164,7 @@ const toggleServices = (event) => {
 .nav-link,
 .dropdown-link {
   text-decoration: none;
-  color: #294466;
+  color: #345b46;
   font-weight: 600;
   transition: color 0.2s ease;
 }
@@ -187,13 +187,13 @@ const toggleServices = (event) => {
 
 .nav-link:hover,
 .dropdown-link:hover {
-  color: #173b63;
+  color: #285943;
 }
 
 .nav-link.router-link-exact-active,
 .nav-link.router-link-active {
-  background: rgba(18, 159, 208, 0.1);
-  color: #173b63;
+  background: rgba(143, 202, 63, 0.14);
+  color: #285943;
 }
 
 .nav-dropdown {
@@ -230,18 +230,18 @@ const toggleServices = (event) => {
 }
 
 .dropdown-link:hover {
-  background: rgba(37, 132, 184, 0.1);
+  background: rgba(143, 202, 63, 0.14);
 }
 
 .nav-toggle {
   display: none;
   border: none;
-  background: #eef7fb;
+  background: #edf8e4;
   width: 46px;
   height: 46px;
   border-radius: 12px;
   font-size: 1.4rem;
-  color: #173b63;
+  color: #285943;
   cursor: pointer;
 }
 

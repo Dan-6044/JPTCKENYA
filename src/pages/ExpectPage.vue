@@ -15,7 +15,7 @@ import { expectSteps } from '../data/siteData'
       <div class="container intro-copy">
         <p>
           Starting therapy can feel like a big step, especially when you are not yet sure what your child needs.
-          At JPTCKENYA, Jenga Paediatric Therapy Center, we aim to make the process of starting paediatric
+          At Jenga Paediatric Therapy Center, we aim to make the process of starting paediatric
           physiotherapy or occupational therapy clear, comfortable and collaborative from the very beginning.
           Every child is different, so their journey with us will be individually tailored to their needs,
           abilities and goals.
@@ -46,7 +46,7 @@ import { expectSteps } from '../data/siteData'
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #173b63, #2584b8);
+  background: linear-gradient(135deg, #285943, #8fca3f);
   color: white;
   padding: 72px 0 60px;
 }
@@ -76,7 +76,7 @@ import { expectSteps } from '../data/siteData'
 
 .intro-copy p {
   margin: 0;
-  color: #53647a;
+  color: #526659;
   font-size: 1.08rem;
   line-height: 1.8;
   max-width: 920px;
@@ -98,7 +98,7 @@ import { expectSteps } from '../data/siteData'
 
 .step-card h3 {
   margin: 0 0 14px;
-  color: #173b63;
+  color: #285943;
   font-size: 1.38rem;
   line-height: 1.3;
 }
@@ -109,15 +109,15 @@ import { expectSteps } from '../data/siteData'
   display: grid;
   place-items: center;
   border-radius: 16px;
-  background: rgba(18, 159, 208, 0.12);
-  color: #173b63;
+  background: rgba(143, 202, 63, 0.14);
+  color: #285943;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .step-card p {
   margin: 0 0 12px;
-  color: #53647a;
+  color: #526659;
   line-height: 1.7;
   font-size: 1rem;
 }

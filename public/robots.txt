@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jptckenya.com/sitemap.xml
+Sitemap: https://jenga.com/sitemap.xml

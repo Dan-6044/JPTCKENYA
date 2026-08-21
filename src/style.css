@@ -2,19 +2,19 @@
   font-family: Inter, 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #263b52;
-  background: #f7f9fc;
+  color: #304b3b;
+  background: #f7fbf4;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --brand-deep: #173b63;
-  --brand-mid: #129fd0;
-  --brand-soft: #2584b8;
-  --brand-light: #eef7fb;
-  --heading: #243d61;
-  --text: #53647a;
-  --border: rgba(36, 61, 97, 0.12);
+  --brand-deep: #285943;
+  --brand-mid: #8fca3f;
+  --brand-soft: #a6d65a;
+  --brand-light: #edf8e4;
+  --heading: #285943;
+  --text: #526659;
+  --border: rgba(40, 89, 67, 0.14);
 }
 
 * {
@@ -28,7 +28,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #f7f9fc;
+  background: #f7fbf4;
   color: var(--text);
 }
 

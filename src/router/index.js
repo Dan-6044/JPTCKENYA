@@ -8,7 +8,7 @@ import ContactPage from '../pages/ContactPage.vue'
 import { serviceItems } from '../data/siteData'
 
 const commonKeywords =
-  'PPTKENYA, JPTCKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth, peadiatric therapist, phsyiotherapist, peadiatric phsyiotherapist'
+  'PPTKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth, peadiatric therapist, phsyiotherapist, peadiatric phsyiotherapist'
 
 const routes = [
   {
@@ -16,11 +16,11 @@ const routes = [
     name: 'home',
     component: HomePage,
     meta: {
-      title: 'JPTCKENYA | Jenga Paediatric Therapy Center',
+      title: 'Jenga | Jenga Paediatric Therapy Center',
       description:
         'Jenga Paediatric Therapy Center in Nairobi provides paediatric physiotherapy, occupational therapy, developmental support and family-centred care.',
       keywords:
-        'PPTKENYA, JPTCKENYA, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, therapy Nairobi',
+        'PPTKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, therapy Nairobi',
     },
   },
   {
@@ -28,10 +28,10 @@ const routes = [
     name: 'expect',
     component: ExpectPage,
     meta: {
-      title: 'What to Expect | JPTCKENYA',
+      title: 'What to Expect | Jenga',
       description:
         'Learn how Jenga Paediatric Therapy Center makes paediatric physiotherapy, occupational therapy and developmental support clear, comfortable and collaborative.',
-      keywords: 'JPTCKENYA, Jenga, paediatric therapy, paediatric physiotherapist, therapy assessment',
+      keywords: 'Jenga, paediatric therapy, paediatric physiotherapist, therapy assessment',
     },
   },
   {
@@ -39,11 +39,11 @@ const routes = [
     name: 'services',
     component: ServicesPage,
     meta: {
-      title: 'Paediatric Therapy Services | JPTCKENYA',
+      title: 'Paediatric Therapy Services | Jenga',
       description:
-        'Explore paediatric physiotherapy, occupational therapy, early development, assessments, school-based therapy, telehealth and family support at JPTCKENYA.',
+        'Explore paediatric physiotherapy, occupational therapy, early development, assessments, school-based therapy, telehealth and family support at Jenga.',
       keywords:
-        'PPTKENYA, JPTCKENYA, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth, Jenga',
+        'PPTKENYA, Jenga, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth',
     },
   },
   {
@@ -52,10 +52,10 @@ const routes = [
     component: ServiceDetailPage,
     props: true,
     meta: {
-      title: 'Paediatric Therapy Service | JPTCKENYA',
+      title: 'Paediatric Therapy Service | Jenga',
       description:
         'Explore specialist paediatric therapy and family-centred support from Jenga Paediatric Therapy Center in Nairobi.',
-      keywords: 'JPTCKENYA, Jenga Paediatric Therapy Center, paediatric therapy, paediatric therapist, physiotherapist',
+      keywords: 'Jenga, Jenga Paediatric Therapy Center, paediatric therapy, paediatric therapist, physiotherapist',
     },
   },
   {
@@ -63,11 +63,11 @@ const routes = [
     name: 'team',
     component: TeamPage,
     meta: {
-      title: 'Teams & Partners | JPTCKENYA',
+      title: 'Teams & Partners | Jenga',
       description:
         'Meet the paediatric therapists, physiotherapists and trusted professional partners supporting children and families at Jenga Paediatric Therapy Center.',
       keywords:
-        'JPTCKENYA, Jenga, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy team',
+        'Jenga, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy team',
     },
   },
   {
@@ -75,11 +75,11 @@ const routes = [
     name: 'contact',
     component: ContactPage,
     meta: {
-      title: 'Contact JPTCKENYA | Jenga Paediatric Therapy Center',
+      title: 'Contact Jenga | Jenga Paediatric Therapy Center',
       description:
         'Contact Jenga Paediatric Therapy Center in Nairobi about paediatric physiotherapy, occupational therapy, assessments, telehealth and family support.',
       keywords:
-        'PPTKENYA, JPTCKENYA, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, telehealth, therapy Nairobi',
+        'PPTKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, telehealth, therapy Nairobi',
     },
   },
   {
@@ -101,11 +101,11 @@ router.afterEach((to) => {
     ? serviceItems.find((item) => item.slug === to.params.slug)
     : null
   const title = service
-    ? `${service.name} | JPTCKENYA`
-    : to.meta.title || 'JPTCKENYA | Jenga Paediatric Therapy Center'
+    ? `${service.name} | Jenga`
+    : to.meta.title || 'Jenga | Jenga Paediatric Therapy Center'
   const description =
     to.meta.description ||
-    'JPTCKENYA is Jenga Paediatric Therapy Center in Nairobi, providing specialist paediatric therapy and family support.'
+    'Jenga Paediatric Therapy Center in Nairobi provides specialist paediatric therapy and family support.'
   const keywords = [commonKeywords, to.meta.keywords].filter(Boolean).join(', ')
 
   document.title = title

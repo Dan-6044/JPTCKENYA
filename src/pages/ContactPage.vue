@@ -33,7 +33,7 @@ const contactDetails = [
           <span class="eyebrow">Book a consultation</span>
           <h2>Let’s talk about your child’s needs.</h2>
           <p>
-            Contact JPTCKENYA, Jenga Paediatric Therapy Center, directly and we will help you identify the
+            Contact Jenga Paediatric Therapy Center directly and we will help you identify the
             most suitable first step for your child. You do not need to know whether your child requires
             paediatric physiotherapy, occupational therapy, telehealth or a specific assessment before getting in touch.
           </p>
@@ -80,7 +80,7 @@ const contactDetails = [
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #173b63, #2584b8);
+  background: linear-gradient(135deg, #285943, #8fca3f);
   color: white;
   padding: 72px 0 60px;
 }
@@ -121,7 +121,7 @@ const contactDetails = [
 .contact-card h2 {
   margin-top: 0;
   margin-bottom: 18px;
-  color: #243d61;
+  color: #285943;
   font-size: 1.9rem;
 }
 
@@ -130,7 +130,7 @@ const contactDetails = [
   display: grid;
   gap: 4px;
   margin-bottom: 18px;
-  color: #53647a;
+  color: #526659;
   line-height: 1.7;
 }
 
@@ -140,13 +140,13 @@ const contactDetails = [
 }
 
 .booking-card .eyebrow {
-  color: #2584b8;
+  color: #6da52d;
   margin-bottom: 0;
 }
 
 .booking-card > p {
   margin: 0 0 8px;
-  color: #53647a;
+  color: #526659;
   line-height: 1.7;
 }
 
@@ -161,15 +161,15 @@ const contactDetails = [
   align-items: center;
   gap: 12px;
   padding: 14px;
-  border: 1px solid rgba(18, 159, 208, 0.18);
+  border: 1px solid rgba(143, 202, 63, 0.24);
   border-radius: 12px;
-  color: #243d61;
+  color: #285943;
   text-decoration: none;
-  background: #f3f9fc;
+  background: #f1f8eb;
 }
 
 .contact-action:hover {
-  background: #eaf4fb;
+  background: #e6f4d9;
 }
 
 .action-icon {
@@ -178,7 +178,7 @@ const contactDetails = [
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #129fd0;
+  background: #8fca3f;
   color: #fff;
 }
 
@@ -189,24 +189,24 @@ const contactDetails = [
 
 .contact-action small {
   margin-top: 2px;
-  color: #53647a;
+  color: #526659;
 }
 
 .next-steps {
   padding-top: 10px;
-  border-top: 1px solid rgba(36, 61, 97, 0.1);
+  border-top: 1px solid rgba(40, 89, 67, 0.12);
 }
 
 .next-steps h3 {
   margin: 0 0 10px;
-  color: #243d61;
+  color: #285943;
   font-size: 1.15rem;
 }
 
 .next-steps ol {
   margin: 0;
   padding-left: 22px;
-  color: #53647a;
+  color: #526659;
   line-height: 1.8;
 }
 

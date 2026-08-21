@@ -7,7 +7,7 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
     <div class="container footer-grid">
       <div>
         <div class="brand-mark">
-          <img class="brand-logo" :src="logoImage" alt="JPTC Kenya logo" />
+          <img class="brand-logo" :src="logoImage" alt="Jenga logo" />
         </div>
         <p>
           Supporting children and families with compassionate, specialist paediatric therapy to help every child thrive.
@@ -49,7 +49,7 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
 
     <div class="copyright-bar">
       <div class="container">
-        <span>© 2026 JPTCKENYA. All rights reserved.</span>
+        <span>© 2026 Jenga. All rights reserved.</span>
       </div>
     </div>
   </footer>
@@ -62,7 +62,7 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
 }
 
 .site-footer {
-  background: #172c4b;
+  background: #1f4533;
   color: rgba(255, 255, 255, 0.82);
   margin-top: 60px;
 }
@@ -117,13 +117,18 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
 }
 
 .socials a {
-  width: 34px;
-  height: 34px;
+  width: 46px;
+  height: 46px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
+  font-size: 1.45rem;
+}
+
+.socials a span {
+  font-size: 0.6rem;
 }
 
 .copyright-bar {

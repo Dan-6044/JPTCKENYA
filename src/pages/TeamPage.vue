@@ -15,7 +15,7 @@ import { teamMembers } from '../data/siteData'
       <div class="container team-intro">
         <p>
           Meet the paediatric therapists, physiotherapists and trusted consultants supporting children and
-          families through Jenga Paediatric Therapy Center. Together, our team provides thoughtful therapy,
+          families through Jenga Paediatric Therapy Center. Together, the Jenga team provides thoughtful therapy,
           assessment and specialist guidance tailored to each child.
         </p>
       </div>
@@ -45,7 +45,7 @@ import { teamMembers } from '../data/siteData'
 }
 
 .page-hero {
-  background: linear-gradient(135deg, #173b63, #2584b8);
+  background: linear-gradient(135deg, #285943, #8fca3f);
   color: white;
   padding: 72px 0 60px;
 }
@@ -77,7 +77,7 @@ import { teamMembers } from '../data/siteData'
 .team-intro p {
   max-width: 900px;
   margin: 0;
-  color: #53647a;
+  color: #526659;
   font-size: 1.08rem;
   line-height: 1.8;
 }
@@ -89,7 +89,7 @@ import { teamMembers } from '../data/siteData'
 }
 
 .team-card {
-  background: linear-gradient(180deg, #ffffff, #f1f6fc);
+  background: linear-gradient(180deg, #ffffff, #f1f8eb);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 24px;
   overflow: hidden;
@@ -110,19 +110,19 @@ import { teamMembers } from '../data/siteData'
 
 .team-info h2 {
   margin: 0 0 8px;
-  color: #243d61;
+  color: #285943;
   font-size: 1.6rem;
 }
 
 .team-info h3 {
   margin: 0 0 12px;
   font-size: 1rem;
-  color: #2584b8;
+  color: #6da52d;
 }
 
 .team-info p {
   margin: 0;
-  color: #53647a;
+  color: #526659;
   line-height: 1.7;
 }
 

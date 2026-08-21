@@ -14,7 +14,7 @@ import { serviceItems } from '../data/siteData'
     <section class="section">
       <div class="container services-intro">
         <p>
-          JPTCKENYA is Jenga Paediatric Therapy Center in Nairobi, offering specialist paediatric therapy
+          Jenga Paediatric Therapy Center in Nairobi offers specialist paediatric therapy
           from experienced paediatric therapists and physiotherapists. Our services include physiotherapy,
           occupational therapy, developmental assessments, family support, school-based therapy and telehealth.
         </p>
@@ -48,7 +48,7 @@ import { serviceItems } from '../data/siteData'
 }
 
 .page-hero {
-  background: linear-gradient(135deg, rgba(23, 59, 99, 0.95), rgba(37, 132, 184, 0.88));
+  background: linear-gradient(135deg, rgba(40, 89, 67, 0.95), rgba(143, 202, 63, 0.88));
   color: white;
   padding: 72px 0 60px;
 }
@@ -80,7 +80,7 @@ import { serviceItems } from '../data/siteData'
 .services-intro p {
   max-width: 900px;
   margin: 0;
-  color: #53647a;
+  color: #526659;
   font-size: 1.08rem;
   line-height: 1.8;
 }
@@ -114,24 +114,24 @@ import { serviceItems } from '../data/siteData'
   display: grid;
   place-items: center;
   font-size: 2rem;
-  background: rgba(18, 159, 208, 0.12);
+  background: rgba(143, 202, 63, 0.14);
   margin-bottom: 18px;
 }
 
 .service-card h2 {
   margin: 0 0 14px;
-  color: #243d61;
+  color: #285943;
   font-size: 1.45rem;
 }
 
 .service-card p {
   margin: 0 0 16px;
-  color: #53647a;
+  color: #526659;
   line-height: 1.7;
 }
 
 .service-card span {
-  color: #173b63;
+  color: #285943;
   font-weight: 700;
 }
 

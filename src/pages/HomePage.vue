@@ -14,7 +14,7 @@ const featuredServices = serviceItems.slice(0, 8)
           <h1 class="hero__title">Jenga Paediatric Therapy Center</h1>
           <div class="hero__tagline">Building skills. Growing possibilities.</div>
           <p>
-            JPTC Kenya supports children and families with expert physiotherapy, developmental guidance,
+            Jenga supports children and families with expert physiotherapy, developmental guidance,
             and practical therapy strategies tailored to everyday life.
           </p>
           <div class="hero__actions">
@@ -139,7 +139,7 @@ const featuredServices = serviceItems.slice(0, 8)
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #2584b8;
+  color: #6da52d;
   margin-bottom: 12px;
 }
 
@@ -155,7 +155,7 @@ const featuredServices = serviceItems.slice(0, 8)
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(12, 35, 67, 0.84), rgba(37, 132, 184, 0.48));
+  background: linear-gradient(90deg, rgba(22, 55, 37, 0.84), rgba(143, 202, 63, 0.48));
 }
 
 .hero__content {
@@ -226,9 +226,9 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #129fd0, #2584b8);
+  background: linear-gradient(135deg, #8fca3f, #4e923e);
   color: white;
-  box-shadow: 0 20px 30px rgba(23, 59, 99, 0.2);
+  box-shadow: 0 20px 30px rgba(40, 89, 67, 0.2);
 }
 
 .btn-secondary {
@@ -249,7 +249,7 @@ const featuredServices = serviceItems.slice(0, 8)
   margin: 0;
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.15;
-  color: #243d61;
+  color: #285943;
 }
 
 .service-grid {
@@ -260,7 +260,7 @@ const featuredServices = serviceItems.slice(0, 8)
 
 .service-card {
   display: block;
-  background: linear-gradient(180deg, #ffffff, #f1f6fc);
+  background: linear-gradient(180deg, #ffffff, #f1f8eb);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 22px;
   padding: 28px 22px;
@@ -281,26 +281,26 @@ const featuredServices = serviceItems.slice(0, 8)
   place-items: center;
   font-size: 2rem;
   border-radius: 18px;
-  background: rgba(18, 159, 208, 0.12);
+  background: rgba(143, 202, 63, 0.14);
   margin-bottom: 18px;
 }
 
 .service-card h3 {
   margin: 0 0 12px;
   font-size: 1.2rem;
-  color: #243d61;
+  color: #285943;
 }
 
 .service-card p {
   margin: 0;
-  color: #53647a;
+  color: #526659;
   line-height: 1.7;
 }
 
 .learn-more {
   display: inline-block;
   margin-top: 18px;
-  color: #173b63;
+  color: #285943;
   font-weight: 700;
 }
 
@@ -313,7 +313,7 @@ const featuredServices = serviceItems.slice(0, 8)
 
 .about-copy p {
   margin-top: 18px;
-  color: #53647a;
+  color: #526659;
   line-height: 1.8;
   font-size: 1.06rem;
 }
@@ -324,7 +324,7 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .info-box {
-  background: linear-gradient(135deg, #eef7fb, #eaf4fb);
+  background: linear-gradient(135deg, #edf8e4, #f5faef);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 20px;
   padding: 26px 22px;
@@ -333,12 +333,12 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .info-box strong {
-  color: #243d61;
+  color: #285943;
   font-size: 1.1rem;
 }
 
 .info-box span {
-  color: #53647a;
+  color: #526659;
   line-height: 1.6;
 }
 
@@ -347,7 +347,7 @@ const featuredServices = serviceItems.slice(0, 8)
   grid-template-columns: 0.8fr 0.8fr 1.4fr;
   gap: 22px;
   align-items: start;
-  background: linear-gradient(135deg, #f1f7fc, #eaf4fb);
+  background: linear-gradient(135deg, #f1f8eb, #edf8e4);
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 28px;
   padding: 34px;
@@ -367,7 +367,7 @@ const featuredServices = serviceItems.slice(0, 8)
 
 .booking-summary h3 {
   margin: 0;
-  color: #243d61;
+  color: #285943;
   font-size: 1.25rem;
 }
 
@@ -384,13 +384,13 @@ const featuredServices = serviceItems.slice(0, 8)
 }
 
 .booking-links a {
-  color: #173b63;
+  color: #285943;
   font-weight: 700;
   text-decoration: none;
 }
 
 .booking-links a:hover {
-  color: #129fd0;
+  color: #6da52d;
 }
 
 .booking-links span {
