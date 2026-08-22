@@ -5,6 +5,7 @@ import ServicesPage from '../pages/ServicesPage.vue'
 import ServiceDetailPage from '../pages/ServiceDetailPage.vue'
 import TeamPage from '../pages/TeamPage.vue'
 import ContactPage from '../pages/ContactPage.vue'
+import NotFoundPage from '../pages/NotFoundPage.vue'
 import { serviceItems } from '../data/siteData'
 
 const commonKeywords =
@@ -84,7 +85,12 @@ const routes = [
   },
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/',
+    name: 'not-found',
+    component: NotFoundPage,
+    meta: {
+      title: 'Page Not Found | Jenga',
+      description: 'The page you are looking for does not exist.',
+    },
   },
 ]
 
