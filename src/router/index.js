@@ -17,11 +17,11 @@ const routes = [
     name: 'home',
     component: HomePage,
     meta: {
-      title: 'Jenga | Jenga Paediatric Therapy Center',
+      title: 'Jenga Paediatric Therapy East Africa | Leading Child Therapy Centre in Nairobi',
       description:
-        'Jenga Paediatric Therapy Center in Nairobi provides paediatric physiotherapy, occupational therapy, developmental support and family-centred care.',
+        'Jenga Paediatric Therapy East Africa is a leading paediatric therapy centre in Nairobi, Kenya. We provide expert physiotherapy, occupational therapy, developmental assessments and family-centred care for children across East Africa.',
       keywords:
-        'PPTKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, therapy Nairobi',
+        'PPTKENYA, Jenga, Jenga Paediatric Therapy East Africa, paediatric therapist Nairobi, paediatric physiotherapist East Africa, child therapy Kenya, paediatric therapy centre East Africa',
     },
   },
   {
@@ -29,10 +29,10 @@ const routes = [
     name: 'expect',
     component: ExpectPage,
     meta: {
-      title: 'What to Expect | Jenga',
+      title: 'What to Expect | Jenga Paediatric Therapy East Africa',
       description:
-        'Learn how Jenga Paediatric Therapy Center makes paediatric physiotherapy, occupational therapy and developmental support clear, comfortable and collaborative.',
-      keywords: 'Jenga, paediatric therapy, paediatric physiotherapist, therapy assessment',
+        'Know what to expect from your first visit to Jenga Paediatric Therapy East Africa. Our child-friendly physiotherapy, occupational therapy and developmental sessions are designed for comfort, collaboration and meaningful progress.',
+      keywords: 'Jenga East Africa, what to expect paediatric therapy, first therapy visit Nairobi, paediatric physiotherapy assessment East Africa',
     },
   },
   {
@@ -40,11 +40,11 @@ const routes = [
     name: 'services',
     component: ServicesPage,
     meta: {
-      title: 'Paediatric Therapy Services | Jenga',
+      title: 'Paediatric Therapy Services | Jenga Paediatric Therapy East Africa',
       description:
-        'Explore paediatric physiotherapy, occupational therapy, early development, assessments, school-based therapy, telehealth and family support at Jenga.',
+        'Explore our full range of paediatric therapy services at Jenga Paediatric Therapy East Africa including physiotherapy, occupational therapy, early development, assessments, school-based therapy, telehealth and family support across East Africa.',
       keywords:
-        'PPTKENYA, Jenga, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth',
+        'PPTKENYA, Jenga East Africa, paediatric therapy services, paediatric physiotherapist, occupational therapy Nairobi, telehealth East Africa, child development Kenya',
     },
   },
   {
@@ -53,10 +53,10 @@ const routes = [
     component: ServiceDetailPage,
     props: true,
     meta: {
-      title: 'Paediatric Therapy Service | Jenga',
+      title: 'Paediatric Therapy Service | Jenga Paediatric Therapy East Africa',
       description:
-        'Explore specialist paediatric therapy and family-centred support from Jenga Paediatric Therapy Center in Nairobi.',
-      keywords: 'Jenga, Jenga Paediatric Therapy Center, paediatric therapy, paediatric therapist, physiotherapist',
+        'Discover specialist paediatric therapy services from Jenga Paediatric Therapy East Africa. Expert child physiotherapy, occupational therapy and family-centred support in Nairobi and across East Africa.',
+      keywords: 'Jenga East Africa, paediatric therapy, child physiotherapy, occupational therapy East Africa, family-centred paediatric care',
     },
   },
   {
@@ -64,11 +64,11 @@ const routes = [
     name: 'team',
     component: TeamPage,
     meta: {
-      title: 'Teams & Partners | Jenga',
+      title: 'Our Team & Partners | Jenga Paediatric Therapy East Africa',
       description:
-        'Meet the paediatric therapists, physiotherapists and trusted professional partners supporting children and families at Jenga Paediatric Therapy Center.',
+        'Meet the experienced paediatric therapists, physiotherapists and trusted partners behind Jenga Paediatric Therapy East Africa, dedicated to supporting children and families across East Africa.',
       keywords:
-        'Jenga, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy team',
+        'Jenga East Africa, paediatric therapy team, paediatric physiotherapist Nairobi, child therapy specialists East Africa',
     },
   },
   {
@@ -76,11 +76,11 @@ const routes = [
     name: 'contact',
     component: ContactPage,
     meta: {
-      title: 'Contact Jenga | Jenga Paediatric Therapy Center',
+      title: 'Contact Us | Jenga Paediatric Therapy East Africa',
       description:
-        'Contact Jenga Paediatric Therapy Center in Nairobi about paediatric physiotherapy, occupational therapy, assessments, telehealth and family support.',
+        'Get in touch with Jenga Paediatric Therapy East Africa in Nairobi, Kenya. Book a paediatric physiotherapy, occupational therapy or telehealth consultation for your child across East Africa.',
       keywords:
-        'PPTKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, telehealth, therapy Nairobi',
+        'PPTKENYA, Jenga East Africa contact, book paediatric therapy Nairobi, telehealth East Africa, child physiotherapy Kenya',
     },
   },
   {
@@ -88,8 +88,8 @@ const routes = [
     name: 'not-found',
     component: NotFoundPage,
     meta: {
-      title: 'Page Not Found | Jenga',
-      description: 'The page you are looking for does not exist.',
+      title: 'Page Not Found | Jenga Paediatric Therapy East Africa',
+      description: 'The page you are looking for does not exist. Jenga Paediatric Therapy East Africa offers expert child therapy services in Nairobi and across East Africa.',
     },
   },
 ]
@@ -107,11 +107,11 @@ router.afterEach((to) => {
     ? serviceItems.find((item) => item.slug === to.params.slug)
     : null
   const title = service
-    ? `${service.name} | Jenga`
-    : to.meta.title || 'Jenga | Jenga Paediatric Therapy Center'
+    ? `${service.name} | Jenga Paediatric Therapy East Africa`
+    : to.meta.title || 'Jenga Paediatric Therapy East Africa | Leading Child Therapy Centre in Nairobi'
   const description =
     to.meta.description ||
-    'Jenga Paediatric Therapy Center in Nairobi provides specialist paediatric therapy and family support.'
+    'Jenga Paediatric Therapy East Africa is a leading paediatric therapy centre in Nairobi, Kenya, providing expert child physiotherapy, occupational therapy and family support across East Africa.'
   const keywords = [commonKeywords, to.meta.keywords].filter(Boolean).join(', ')
 
   document.title = title
