@@ -1,4 +1,5 @@
 <script setup>
+import WhatsAppIcon from '../components/WhatsAppIcon.vue'
 import { serviceItems } from '../data/siteData'
 import heroImage from '../assets/Home-Hero.jpeg'
 
@@ -11,13 +12,13 @@ const featuredServices = serviceItems.slice(0, 8)
       <div class="hero__overlay"></div>
       <div class="container hero__content">
         <div class="hero__copy">
-          <h1 class="hero__title">Jenga Paediatric Therapy Center</h1>
+          <h1 class="hero__title">Jenga Paediatric Therapy Centre</h1>
           <div class="hero__tagline">Building skills. Growing possibilities.</div>
           <p>
             Jenga Paediatric Therapy Centre supports children and families with physio- and occupational therapy, developmental guidance, and practical strategies tailored to everyday life, helping each child build skills, confidence, and independence.
           </p>
           <div class="hero__actions">
-            <router-link to="/contact" class="btn btn-primary">Book a consultation</router-link>
+            <router-link to="/contact" class="btn btn-primary">Contact</router-link>
             <router-link to="/services" class="btn btn-secondary">Explore services</router-link>
           </div>
         </div>
@@ -167,16 +168,17 @@ const featuredServices = serviceItems.slice(0, 8)
 
         <div class="contact-details">
           <p>📍 Red Hill Drive, Nyari Estate, Nairobi</p>
-          <p>📞 (254) 741064492</p>
+          <p>📞 +254 741 064 492</p>
           <p>✉️ fondajainruiter@gmail.com</p>
         </div>
 
         <div class="booking-summary">
-          <h3>Book a consultation</h3>
+          <h3>Contact</h3>
           <p>Contact us directly and we will help you find the most suitable first step for your child.</p>
           <div class="booking-links">
-            <a href="tel:+254741064492">☎ <span>(254) 741064492</span></a>
+            <a href="tel:+254741064492">☎ <span>+254 741 064 492</span></a>
             <a href="mailto:fondajainruiter@gmail.com">✉ <span>fondajainruiter@gmail.com</span></a>
+            <a href="https://wa.me/254741064492" target="_blank" rel="noopener noreferrer"><WhatsAppIcon /> <span>+254 741 064 492</span></a>
           </div>
           <ol>
             <li>Contact the centre</li>

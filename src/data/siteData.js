@@ -5,9 +5,9 @@ import fabianImage from '../assets/Fabian.jpeg'
 
 export const serviceItems = [
   {
-    slug: 'pediatric-physiotherapy',
+    slug: 'paediatric-physiotherapy',
     icon: '🦵',
-    name: 'Pediatric Physiotherapy',
+    name: 'Paediatric Physiotherapy',
     short: 'Helping babies, children and adolescents build movement skills for everyday life.',
     summary:
       'Paediatric physiotherapy helps children develop the movement skills, strength and physical confidence they need to participate more independently in everyday life.',
@@ -337,5 +337,10 @@ export const teamMembers = [
     bio: 'Fabian Collis is a Consultant Podiatrist with over 25 years of clinical experience, with extensive expertise in foot and lower-limb biomechanics. Fabian works from his own practice, Fit the Foot, and collaborates closely with Jenga Paediatric Therapy Centre. We refer children to him when a specialist podiatry assessment is indicated, and he similarly refers children to Jenga when physiotherapy input would be beneficial. This collaboration allows us to coordinate care where a child’s foot posture, biomechanics and overall movement are closely connected. He assesses children and adolescents with concerns such as flat feet, altered foot posture, unusual walking patterns, lower-limb alignment difficulties, foot or leg pain, and sports-related complaints. Where appropriate, he can advise on footwear, insoles and other podiatric interventions. Fabian is President of F.A.L.G.A. (Foot Limb Group and Association), working in conjunction with the Ministry of Health and K.D.S.G. He is HPC registered and a member of the British School of Podiatry, the Institute of Chiropodists and Podiatrists UK, and the Royal College of Podiatry. His approach is practical and evidence-based, with recommendations tailored to each child’s age, development, activities and individual needs.',
     image:
       fabianImage,
+  },
+  {
+    name: 'Bethesda Bionics Centre',
+    role: 'Orthotics & Prosthetics Partner',
+    bio: 'Bethesda Bionics Centre works closely with Jenga Paediatric Therapy Centre to provide children with individually fitted orthotic and mobility solutions.\n\nTheir services include the assessment, design and fitting of AFOs, DAFOs, KAFOs, splints, braces, shoe modifications, shoe raises and custom insoles, as well as other supportive devices tailored to each child\u2019s individual needs.\n\nBethesda Bionics Centre has experience supporting children with walking and mobility difficulties, foot and lower-limb alignment concerns, contractures and orthopaedic deformities. Casting services are also available where appropriate.\n\nThrough our collaboration, physiotherapy and orthotic management can be closely coordinated, helping ensure that each device supports the child\u2019s movement, comfort, function and therapy goals.\n\nBethesda Bionics Centre is an independent rehabilitation provider in Nairobi and collaborates with Jenga Paediatric Therapy Centre as part of our wider professional network.',
   },
 ]

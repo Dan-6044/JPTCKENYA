@@ -9,7 +9,7 @@ import NotFoundPage from '../pages/NotFoundPage.vue'
 import { serviceItems } from '../data/siteData'
 
 const commonKeywords =
-  'PPTKENYA, Jenga, Jenga Paediatric Therapy Center, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth, peadiatric therapist, phsyiotherapist, peadiatric phsyiotherapist'
+  'PPTKENYA, Jenga, Jenga Paediatric Therapy Centre, paediatric therapist, paediatric physiotherapist, physiotherapist, therapy, telehealth, peadiatric therapist, phsyiotherapist, peadiatric phsyiotherapist'
 
 const routes = [
   {

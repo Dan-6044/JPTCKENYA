@@ -14,7 +14,7 @@ import { serviceItems } from '../data/siteData'
     <section class="section">
       <div class="container services-intro">
         <p>
-          Jenga Paediatric Therapy Center in Nairobi offers specialist paediatric therapy
+          Jenga Paediatric Therapy Centre in Nairobi offers specialist paediatric therapy
           from experienced paediatric therapists and physiotherapists. Our services include physiotherapy,
           occupational therapy, developmental assessments, family support, school-based therapy and telehealth.
         </p>

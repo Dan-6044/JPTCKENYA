@@ -25,7 +25,7 @@ const service = computed(
       <div class="container detail-layout">
         <article class="detail-content">
           <p class="seo-intro">
-            Jenga Paediatric Therapy Center provides individualised paediatric therapy and
+            Jenga Paediatric Therapy Centre provides individualised paediatric therapy and
             physiotherapy support for children and families in Nairobi and through telehealth.
           </p>
           <p class="lead">{{ service.summary }}</p>
@@ -49,7 +49,7 @@ const service = computed(
         <aside class="side-card">
           <h3>Need support?</h3>
           <p>We can help your child with personalized assessment and therapy planning.</p>
-          <router-link to="/contact" class="btn">Book a consultation</router-link>
+          <router-link to="/contact" class="btn">Contact</router-link>
         </aside>
       </div>
     </section>

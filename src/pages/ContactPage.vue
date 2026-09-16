@@ -1,6 +1,7 @@
 <script setup>
+import WhatsAppIcon from '../components/WhatsAppIcon.vue'
 const contactDetails = [
-  { label: 'Phone', value: '(254) 741064492' },
+  { label: 'Phone', value: '+254 741 064 492' },
   { label: 'Email', value: 'fondajainruiter@gmail.com' },
   { label: 'Location', value: 'Red Hill Drive, Nyari Estate, Nairobi' },
 ]
@@ -30,10 +31,10 @@ const contactDetails = [
         </div>
 
         <div class="contact-card booking-card">
-          <span class="eyebrow">Book a consultation</span>
+          <span class="eyebrow">Contact</span>
           <h2>Let’s talk about your child’s needs.</h2>
           <p>
-            Contact Jenga Paediatric Therapy Center directly and we will help you identify the
+            Contact Jenga Paediatric Therapy Centre directly and we will help you identify the
             most suitable first step for your child. You do not need to know whether your child requires
             paediatric physiotherapy, occupational therapy, telehealth or a specific assessment before getting in touch.
           </p>
@@ -43,7 +44,7 @@ const contactDetails = [
               <span class="action-icon">☎</span>
               <span>
                 <strong>Call us</strong>
-                <small>(254) 741064492</small>
+                <small>+254 741 064 492</small>
               </span>
             </a>
             <a href="mailto:fondajainruiter@gmail.com" class="contact-action">
@@ -51,6 +52,13 @@ const contactDetails = [
               <span>
                 <strong>Email us</strong>
                 <small>fondajainruiter@gmail.com</small>
+              </span>
+            </a>
+            <a href="https://wa.me/254741064492" class="contact-action" target="_blank" rel="noopener noreferrer">
+              <span class="action-icon"><WhatsAppIcon /></span>
+              <span>
+                <strong>WhatsApp us</strong>
+                <small>+254 741 064 492</small>
               </span>
             </a>
           </div>

@@ -15,14 +15,19 @@ import { teamMembers } from '../data/siteData'
       <div class="container team-intro">
         <p>
           Meet the paediatric therapists, physiotherapists and trusted consultants supporting children and
-          families through Jenga Paediatric Therapy Center. Together, the Jenga team provides thoughtful therapy,
+          families through Jenga Paediatric Therapy Centre. Together, the Jenga team provides thoughtful therapy,
           assessment and specialist guidance tailored to each child.
         </p>
       </div>
 
       <div class="container team-grid">
-        <article v-for="member in teamMembers" :key="member.name" class="team-card">
-          <img :src="member.image" :alt="member.name" />
+        <article
+          v-for="member in teamMembers"
+          :key="member.name"
+          class="team-card"
+          :class="{ 'team-card--wide': !member.image }"
+        >
+          <img v-if="member.image" :src="member.image" :alt="member.name" />
           <div class="team-info">
             <h2>{{ member.name }}</h2>
             <h3>{{ member.role }}</h3>
@@ -99,6 +104,14 @@ import { teamMembers } from '../data/siteData'
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
 }
 
+.team-card--wide {
+  grid-column: span 2;
+}
+
+.team-card--wide .team-info {
+  padding: 40px;
+}
+
 .team-card img {
   width: 100%;
   height: 360px;
@@ -132,6 +145,14 @@ import { teamMembers } from '../data/siteData'
 @media (max-width: 760px) {
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-card--wide {
+    grid-column: span 1;
+  }
+
+  .team-card--wide .team-info {
+    padding: 24px;
   }
 }
 

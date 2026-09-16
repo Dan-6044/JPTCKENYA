@@ -15,7 +15,7 @@ import { expectSteps } from '../data/siteData'
       <div class="container intro-copy">
         <p>
           Starting therapy can feel like a big step, especially when you are not yet sure what your child needs.
-          At Jenga Paediatric Therapy Center, we aim to make the process of starting paediatric
+          At Jenga Paediatric Therapy Centre, we aim to make the process of starting paediatric
           physiotherapy or occupational therapy clear, comfortable and collaborative from the very beginning.
           Every child is different, so their journey with us will be individually tailored to their needs,
           abilities and goals.
