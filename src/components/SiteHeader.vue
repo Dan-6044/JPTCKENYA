@@ -42,7 +42,7 @@ const openServices = () => {
         <span>Mon - Fri: 09:00AM - 17:00PM</span>
         <span>📍 Red Hill Drive, Nyari Estate, Nairobi</span>
         <span>📞 +254 741 064 492</span>
-        <span>✉️ fondajainruiter@gmail.com</span>
+        <span>✉️ jengatherapycentre@gmail.com</span>
       </div>
     </div>
 

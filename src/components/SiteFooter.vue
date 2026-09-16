@@ -43,7 +43,7 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:-2px;margin-right:4px;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.2 4.79 1.2 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" fill="#25D366"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.2 4.79 1.2 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" stroke="#25D366" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.69 13.49c-.13-.22-.34-.28-.58-.28-.2 0-.4.07-.58.2-.16.13-.26.31-.26.48 0 .16.07.3.19.43.14.13.3.2.43.2.16 0 .29-.1.4-.24.13-.2.2-.43.2-.66 0-.1-.03-.17-.07-.23z" fill="#fff"/><path d="M15.39 8.61c-.13-.22-.34-.28-.58-.28-.2 0-.4.07-.58.2-.16.13-.26.31-.26.48 0 .16.07.3.19.43.14.13.3.2.43.2.16 0 .29-.1.4-.24.13-.2.2-.43.2-.66 0-.1-.03-.17-.07-.23z" fill="#fff"/><path d="M16.46 12.09c-.24.67-1.4 1.29-1.94 1.3-.48.09-.88.04-1.89-.38-1.5-.7-2.91-2.11-3.86-3.66-.79-1.29-1.02-2.24-.71-2.92.23-.52.66-.85 1.1-.97.37-.1.76-.05 1.14.06.41.12.9.54 1.22 1.1.3.52.43 1.17.61 1.69.16.48.34 1.47.06 2.14z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             WhatsApp
           </a></li>
-          <li>fondajainruiter@gmail.com</li>
+          <li>jengatherapycentre@gmail.com</li>
         </ul>
         <div class="socials">
           <a href="https://www.instagram.com/pptfonda/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎ <span>Instagram</span></a>

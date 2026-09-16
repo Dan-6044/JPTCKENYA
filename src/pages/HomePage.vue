@@ -169,7 +169,7 @@ const featuredServices = serviceItems.slice(0, 8)
         <div class="contact-details">
           <p>📍 Red Hill Drive, Nyari Estate, Nairobi</p>
           <p>📞 +254 741 064 492</p>
-          <p>✉️ fondajainruiter@gmail.com</p>
+          <p>✉️ jengatherapycentre@gmail.com</p>
         </div>
 
         <div class="booking-summary">
@@ -177,7 +177,7 @@ const featuredServices = serviceItems.slice(0, 8)
           <p>Contact us directly and we will help you find the most suitable first step for your child.</p>
           <div class="booking-links">
             <a href="tel:+254741064492">☎ <span>+254 741 064 492</span></a>
-            <a href="mailto:fondajainruiter@gmail.com">✉ <span>fondajainruiter@gmail.com</span></a>
+            <a href="mailto:jengatherapycentre@gmail.com">✉ <span>jengatherapycentre@gmail.com</span></a>
             <a href="https://wa.me/254741064492" target="_blank" rel="noopener noreferrer"><WhatsAppIcon /> <span>+254 741 064 492</span></a>
           </div>
           <ol>

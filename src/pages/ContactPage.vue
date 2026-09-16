@@ -2,7 +2,7 @@
 import WhatsAppIcon from '../components/WhatsAppIcon.vue'
 const contactDetails = [
   { label: 'Phone', value: '+254 741 064 492' },
-  { label: 'Email', value: 'fondajainruiter@gmail.com' },
+  { label: 'Email', value: 'jengatherapycentre@gmail.com' },
   { label: 'Location', value: 'Red Hill Drive, Nyari Estate, Nairobi' },
 ]
 </script>
@@ -47,11 +47,11 @@ const contactDetails = [
                 <small>+254 741 064 492</small>
               </span>
             </a>
-            <a href="mailto:fondajainruiter@gmail.com" class="contact-action">
+            <a href="mailto:jengatherapycentre@gmail.com" class="contact-action">
               <span class="action-icon">✉</span>
               <span>
                 <strong>Email us</strong>
-                <small>fondajainruiter@gmail.com</small>
+                <small>jengatherapycentre@gmail.com</small>
               </span>
             </a>
             <a href="https://wa.me/254741064492" class="contact-action" target="_blank" rel="noopener noreferrer">
