@@ -72,20 +72,20 @@ const galleryImages = [
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .gallery-item {
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.1);
   background: #fff;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 220px;
+  height: 320px;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
@@ -95,19 +95,24 @@ const galleryImages = [
   transform: scale(1.03);
 }
 
-@media (max-width: 1000px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .gallery-item img {
-    height: 180px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .gallery-item img {
+    height: 280px;
   }
 }
 
@@ -121,12 +126,11 @@ const galleryImages = [
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 
   .gallery-item img {
-    height: 200px;
+    height: 240px;
   }
 }
 </style>
