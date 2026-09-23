@@ -56,20 +56,24 @@ onBeforeUnmount(() => {
       </div>
 
       <div class="testimonial-track">
-        <article
-          v-for="(item, index) in testimonials"
-          :key="item.name"
-          class="testimonial-card"
-          :class="{ 'testimonial-card--active': index === current }"
+        <div
+          class="testimonial-slide"
+          :style="{ transform: `translateX(-${current * 50}%)` }"
         >
-          <div class="avatar" :style="{ background: avatarColor(index) }">
-            {{ initials(item.name) }}
-          </div>
-          <div class="testimonial-body">
-            <p class="testimonial-text">“{{ item.text }}”</p>
-            <p class="testimonial-name">{{ item.name }}</p>
-          </div>
-        </article>
+          <article
+            v-for="(item, index) in testimonials"
+            :key="item.name"
+            class="testimonial-card"
+          >
+            <div class="avatar" :style="{ background: avatarColor(index) }">
+              {{ initials(item.name) }}
+            </div>
+            <div class="testimonial-body">
+              <p class="testimonial-text">“{{ item.text }}”</p>
+              <p class="testimonial-name">{{ item.name }}</p>
+            </div>
+          </article>
+        </div>
       </div>
 
       <div class="testimonial-dots">
@@ -119,42 +123,37 @@ onBeforeUnmount(() => {
 }
 
 .testimonial-track {
-  position: relative;
   overflow: hidden;
-  min-height: 280px;
+}
+
+.testimonial-slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  transition: transform 0.6s ease;
 }
 
 .testimonial-card {
-  display: flex;
-  align-items: center;
-  gap: 24px;
   background: #ffffff;
   border: 1px solid rgba(15, 23, 42, 0.06);
   border-radius: 24px;
   padding: 32px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
-  opacity: 0;
-  transform: translateX(60px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  pointer-events: none;
-}
-
-.testimonial-card--active {
-  opacity: 1;
-  transform: translateX(0);
-  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .avatar {
   flex-shrink: 0;
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   color: #fff;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .testimonial-body {
@@ -164,7 +163,7 @@ onBeforeUnmount(() => {
 .testimonial-text {
   margin: 0 0 14px;
   color: #526659;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
@@ -172,7 +171,7 @@ onBeforeUnmount(() => {
   margin: 0;
   color: #3d6b26;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .testimonial-dots {
@@ -224,6 +223,10 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 760px) {
+  .testimonial-slide {
+    grid-template-columns: 1fr;
+  }
+
   .testimonial-card {
     flex-direction: column;
     text-align: center;
@@ -246,9 +249,9 @@ onBeforeUnmount(() => {
   }
 
   .avatar {
-    width: 56px;
-    height: 56px;
-    font-size: 1.1rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1rem;
   }
 }
 </style>
