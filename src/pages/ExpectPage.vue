@@ -1,5 +1,6 @@
 <script setup>
 import { expectSteps } from '../data/siteData'
+import TestimonialCarousel from '../components/TestimonialCarousel.vue'
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import { expectSteps } from '../data/siteData'
     <section class="page-hero small-hero">
       <div class="container">
         <span class="eyebrow">What to expect</span>
-        <h1>Your child’s journey with us</h1>
+        <h1>Your child's journey with us</h1>
       </div>
     </section>
 
@@ -32,6 +33,8 @@ import { expectSteps } from '../data/siteData'
         </div>
       </div>
     </section>
+
+    <TestimonialCarousel />
   </main>
 </template>
 

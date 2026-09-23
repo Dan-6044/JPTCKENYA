@@ -344,3 +344,26 @@ export const teamMembers = [
     bio: 'Bethesda Bionics Centre works closely with Jenga Paediatric Therapy Centre to provide children with individually fitted orthotic and mobility solutions.\n\nTheir services include the assessment, design and fitting of AFOs, DAFOs, KAFOs, splints, braces, shoe modifications, shoe raises and custom insoles, as well as other supportive devices tailored to each child\u2019s individual needs.\n\nBethesda Bionics Centre has experience supporting children with walking and mobility difficulties, foot and lower-limb alignment concerns, contractures and orthopaedic deformities. Casting services are also available where appropriate.\n\nThrough our collaboration, physiotherapy and orthotic management can be closely coordinated, helping ensure that each device supports the child\u2019s movement, comfort, function and therapy goals.\n\nBethesda Bionics Centre is an independent rehabilitation provider in Nairobi and collaborates with Jenga Paediatric Therapy Centre as part of our wider professional network.',
   },
 ]
+
+export const testimonials = [
+  {
+    name: 'Millicent Kemboi',
+    text: 'After my son\u2019s elbow fracture and surgery, he was frightened to move his arm. Fonda cleverly turned rehabilitation into games, so he was having fun before he even realised he was practising. Little by little, his fear disappeared and his confidence returned.',
+  },
+  {
+    name: 'Mike Gitau',
+    text: 'We first noticed that our baby preferred looking to one side. Fonda reassured us and showed us easy ways to encourage movement during everyday moments at home. The improvement has been lovely to see.',
+  },
+  {
+    name: 'Jane Kipyegon',
+    text: 'My son\u2019s verdict at the end of therapy was: \u2018Can I still go to Fonda for a playdate?\u2019 He looked forward to every session.',
+  },
+  {
+    name: 'Fatuma Juma',
+    text: 'From our very first appointment, Fonda made us feel heard and understood. She has such a lovely, relaxed way with children, and our child felt comfortable with her straight away. We are so grateful for her support and would happily recommend her to other families.',
+  },
+  {
+    name: 'Abdi Ibrahim',
+    text: 'I had no idea children\u2019s physiotherapy could be this much fun! There were games, movement and lots of laughs. Honestly, I wish my own physio sessions were more like this!',
+  },
+]
