@@ -21,6 +21,7 @@ import logoImage from '../assets/JPTC-LOGO.jpeg'
           <li><router-link to="/what-to-expect">What to expect</router-link></li>
           <li><router-link to="/services">Services</router-link></li>
           <li><router-link to="/team">Team & Partners</router-link></li>
+          <li><router-link to="/gallery">Gallery</router-link></li>
         </ul>
       </div>
 

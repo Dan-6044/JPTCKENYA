@@ -9,6 +9,7 @@ const navItems = [
   { label: 'What to expect?', to: '/what-to-expect' },
   { label: 'Services', to: '/services', hasDropdown: true },
   { label: 'Team & Partners', to: '/team' },
+  { label: 'Gallery', to: '/gallery' },
   { label: 'Contact Us', to: '/contact' },
 ]
 

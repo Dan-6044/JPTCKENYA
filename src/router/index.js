@@ -5,6 +5,7 @@ import ServicesPage from '../pages/ServicesPage.vue'
 import ServiceDetailPage from '../pages/ServiceDetailPage.vue'
 import TeamPage from '../pages/TeamPage.vue'
 import ContactPage from '../pages/ContactPage.vue'
+import GalleryPage from '../pages/GalleryPage.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 import { serviceItems } from '../data/siteData'
 
@@ -69,6 +70,17 @@ const routes = [
         'Meet the experienced paediatric therapists, physiotherapists and trusted partners behind Jenga Paediatric Therapy East Africa, dedicated to supporting children and families across East Africa.',
       keywords:
         'Jenga East Africa, paediatric therapy team, paediatric physiotherapist Nairobi, child therapy specialists East Africa',
+    },
+  },
+  {
+    path: '/gallery',
+    name: 'gallery',
+    component: GalleryPage,
+    meta: {
+      title: 'Gallery | Jenga Paediatric Therapy East Africa',
+      description:
+        'Explore our gallery of therapy sessions, developmental activities and family-centred care at Jenga Paediatric Therapy East Africa in Nairobi.',
+      keywords: 'Jenga East Africa, therapy gallery, paediatric therapy, child physiotherapy Nairobi',
     },
   },
   {
