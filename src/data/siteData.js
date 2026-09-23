@@ -2,6 +2,11 @@ import fondaImage from '../assets/Fonda.jpeg'
 import priyalImage from '../assets/Priyal.jpeg'
 import ashleyImage from '../assets/Ashley.jpeg'
 import fabianImage from '../assets/Fabian.jpeg'
+import millicentImage from '../assets/testimonials/millicent.jpg'
+import mikeImage from '../assets/testimonials/mike.jpg'
+import janeImage from '../assets/testimonials/jane.jpg'
+import fatumaImage from '../assets/testimonials/fatuma.jpg'
+import abdiImage from '../assets/testimonials/abdi.jpg'
 
 export const serviceItems = [
   {
@@ -348,22 +353,27 @@ export const teamMembers = [
 export const testimonials = [
   {
     name: 'Millicent Kemboi',
+    image: millicentImage,
     text: 'After my son\u2019s elbow fracture and surgery, he was frightened to move his arm. Fonda cleverly turned rehabilitation into games, so he was having fun before he even realised he was practising. Little by little, his fear disappeared and his confidence returned.',
   },
   {
     name: 'Mike Gitau',
+    image: mikeImage,
     text: 'We first noticed that our baby preferred looking to one side. Fonda reassured us and showed us easy ways to encourage movement during everyday moments at home. The improvement has been lovely to see.',
   },
   {
     name: 'Jane Kipyegon',
+    image: janeImage,
     text: 'My son\u2019s verdict at the end of therapy was: \u2018Can I still go to Fonda for a playdate?\u2019 He looked forward to every session.',
   },
   {
     name: 'Fatuma Juma',
+    image: fatumaImage,
     text: 'From our very first appointment, Fonda made us feel heard and understood. She has such a lovely, relaxed way with children, and our child felt comfortable with her straight away. We are so grateful for her support and would happily recommend her to other families.',
   },
   {
     name: 'Abdi Ibrahim',
+    image: abdiImage,
     text: 'I had no idea children\u2019s physiotherapy could be this much fun! There were games, movement and lots of laughs. Honestly, I wish my own physio sessions were more like this!',
   },
 ]
