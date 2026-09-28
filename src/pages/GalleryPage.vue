@@ -9,10 +9,13 @@ import gallery7 from '../assets/Gallery-7.jpeg'
 import gallery8 from '../assets/Gallery-8.jpeg'
 import gallery9 from '../assets/Gallery-9.jpeg'
 import gallery10 from '../assets/Gallery-10.jpeg'
+import gallery11 from '../assets/Gallery-11.jpeg'
+import gallery12 from '../assets/Gallery-12.jpeg'
 
 const galleryImages = [
   gallery1, gallery2, gallery3, gallery4, gallery5,
   gallery6, gallery7, gallery8, gallery9, gallery10,
+  gallery11, gallery12
 ]
 </script>
 

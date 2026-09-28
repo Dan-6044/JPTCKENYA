@@ -1,6 +1,42 @@
 <script setup>
+import { ref, computed } from 'vue'
 import { expectSteps } from '../data/siteData'
-import TestimonialCarousel from '../components/TestimonialCarousel.vue'
+
+const testimonials = [
+  { name: 'Parents of Aarav', initials: 'PA', text: 'From our first visit, Fonda made us feel heard and supported. Our son looks forward to every session and we have seen real progress in his confidence and movement.' },
+  { name: 'Parent of Noah', initials: 'PN', text: 'We noticed our baby preferred one side and felt unsure where to start. Fonda gave us simple, practical strategies to use at home and the improvement has been lovely to see.' },
+  { name: 'Parent of Zuri', initials: 'PZ', text: 'Therapy here is fun and engaging. Zuri is always excited to come in, and the team has helped her build the skills she needs for school and play.' },
+  { name: 'Parents of Joseph', initials: 'PJ', text: 'Joseph was nervous about movement after his injury, but the therapists turned every exercise into a game. His strength and confidence have come back beautifully.' },
+  { name: 'Parents of Mariam', initials: 'PM', text: 'We felt guided at every step. The team worked closely with us and Mariam’s school, and the progress she has made has been truly inspiring.' },
+]
+
+const currentIndex = ref(0)
+
+const slides = computed(() => {
+  const result = []
+  for (let i = 0; i < testimonials.length; i += 2) {
+    result.push(testimonials.slice(i, i + 2))
+  }
+  return result
+})
+
+const totalSlides = computed(() => slides.value.length)
+
+const goTo = (index) => {
+  currentIndex.value = index
+}
+
+const next = () => {
+  if (currentIndex.value < totalSlides.value - 1) {
+    currentIndex.value += 1
+  }
+}
+
+const prev = () => {
+  if (currentIndex.value > 0) {
+    currentIndex.value -= 1
+  }
+}
 </script>
 
 <template>
@@ -34,7 +70,44 @@ import TestimonialCarousel from '../components/TestimonialCarousel.vue'
       </div>
     </section>
 
-    <TestimonialCarousel />
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What parents are saying</h2>
+        </div>
+
+        <div class="testimonial-slider">
+          <button type="button" class="slider-arrow slider-arrow--left" @click="prev" aria-label="Previous testimonials">←</button>
+          
+          <div class="slider-viewport">
+            <div class="slider-track" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+              <div v-for="(slide, i) in slides" :key="i" class="slide">
+                <div v-for="item in slide" :key="item.name" class="testimonial-card">
+                  <div class="testimonial-avatar">{{ item.initials }}</div>
+                  <p class="testimonial-text">“{{ item.text }}”</p>
+                  <p class="testimonial-name">{{ item.name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="slider-arrow slider-arrow--right" @click="next" aria-label="Next testimonials">→</button>
+        </div>
+
+        <div class="slider-dots">
+          <button
+            v-for="(_, index) in slides"
+            :key="index"
+            type="button"
+            class="dot"
+            :class="{ 'is-active': currentIndex === index }"
+            @click="goTo(index)"
+            :aria-label="`Go to slide ${index + 1}`"
+          />
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -129,20 +202,146 @@ import TestimonialCarousel from '../components/TestimonialCarousel.vue'
   margin-bottom: 0;
 }
 
-@media (max-width: 900px) {
-  .steps-layout {
-    gap: 22px;
+.testimonial-section {
+  padding-top: 20px;
+}
+
+.section-heading {
+  max-width: 680px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.15;
+  color: #3d6b26;
+}
+
+.testimonial-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-viewport {
+  overflow: hidden;
+  flex: 1;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.testimonial-card {
+  background: linear-gradient(180deg, #ffffff, #f3fbfd);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonial-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8CC63F, #5a9a3a);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.testimonial-text {
+  margin: 0;
+  color: #526659;
+  line-height: 1.75;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.testimonial-name {
+  margin: 0;
+  color: #3d6b26;
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.slider-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+  color: #3d6b26;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.slider-arrow:hover {
+  background: #f0f9e6;
+  transform: translateY(-1px);
+}
+
+.slider-arrow:active {
+  transform: translateY(0);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(15, 23, 42, 0.12);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.dot.is-active {
+  background: #8CC63F;
+  transform: scale(1.15);
+}
+
+@media (max-width: 760px) {
+  .slide {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-arrow {
+    display: none;
   }
 }
 
 @media (max-width: 700px) {
   .section {
     padding: 48px 0 64px;
-  }
-
-  .intro-copy p {
-    font-size: 1rem;
-    line-height: 1.7;
   }
 
   .steps-layout {
@@ -169,6 +368,10 @@ import TestimonialCarousel from '../components/TestimonialCarousel.vue'
 
   .step-card {
     padding: 22px 18px;
+  }
+
+  .testimonial-card {
+    padding: 22px;
   }
 }
 </style>

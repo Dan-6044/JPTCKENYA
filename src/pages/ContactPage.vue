@@ -1,5 +1,5 @@
 <script setup>
-import WhatsAppIcon from '../components/WhatsAppIcon.vue'
+import whatsappIcon from '../assets/whatsapp.svg'
 const contactDetails = [
   { label: 'Phone', value: '+254 741 064 492' },
   { label: 'Email', value: 'jengatherapycentre@gmail.com' },
@@ -55,7 +55,7 @@ const contactDetails = [
               </span>
             </a>
             <a href="https://wa.me/254741064492" class="contact-action" target="_blank" rel="noopener noreferrer">
-              <span class="action-icon"><WhatsAppIcon /></span>
+              <span class="action-icon"><img :src="whatsappIcon" alt="WhatsApp" /></span>
               <span>
                 <strong>WhatsApp us</strong>
                 <small>+254 741 064 492</small>
@@ -188,6 +188,12 @@ const contactDetails = [
   border-radius: 50%;
   background: #8CC63F;
   color: #fff;
+}
+
+.action-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
 .contact-action strong,

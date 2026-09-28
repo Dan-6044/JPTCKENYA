@@ -1,5 +1,5 @@
 <script setup>
-import WhatsAppIcon from '../components/WhatsAppIcon.vue'
+import whatsappIcon from '../assets/whatsapp.svg'
 import { serviceItems } from '../data/siteData'
 import heroImage from '../assets/Home-Hero.jpeg'
 
@@ -178,7 +178,7 @@ const featuredServices = serviceItems.slice(0, 8)
           <div class="booking-links">
             <a href="tel:+254741064492">☎ <span>+254 741 064 492</span></a>
             <a href="mailto:jengatherapycentre@gmail.com">✉ <span>jengatherapycentre@gmail.com</span></a>
-            <a href="https://wa.me/254741064492" target="_blank" rel="noopener noreferrer"><WhatsAppIcon /> <span>+254 741 064 492</span></a>
+             <a href="https://wa.me/254741064492" target="_blank" rel="noopener noreferrer"><img :src="whatsappIcon" alt="WhatsApp" class="inline-whatsapp" /> <span>+254 741 064 492</span></a>
           </div>
           <ol>
             <li>Contact the centre</li>
@@ -460,10 +460,19 @@ const featuredServices = serviceItems.slice(0, 8)
   color: #3d6b26;
   font-weight: 700;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .booking-links a:hover {
   color: #7ab83a;
+}
+
+.booking-links .inline-whatsapp {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .booking-links span {
